@@ -1,0 +1,47 @@
+input "type?ptz",v
+if v=1
+then
+    input "perc:",j
+    1-(j/100)->a
+    disp "z of"
+    disp a/2
+    input "z:",z
+    input "p hat:",p
+    input "n:",n
+    z*(sqrt(p*(1-p)/n))->c
+    disp p-c
+    disp ","
+    disp p+c
+end
+if v=2
+then
+    input "perc:",j
+    1-(j/100)->a
+    input "n:",n
+    disp "t of"
+    disp n-1
+    disp ","
+    disp 1-a/2
+    input "t:",t
+    input "s:",s
+    input "x bar:",x
+    t*(s/sqrt(n))->c
+    disp x-c
+    disp ","
+    disp x+c
+end
+if v=3
+then
+    input "perc:",j
+    1-(j/100)->a
+    disp "z of"
+    disp a/2
+    input "z:",z
+    input "s:",s
+    input "x bar:",x
+    input "n:",n
+    z*(s/sqrt(n))->c
+    disp x-c
+    disp ","
+    disp x+c
+end

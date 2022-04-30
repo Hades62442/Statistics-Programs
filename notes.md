@@ -1,0 +1,1 @@
+sxx, sxy, syy arent being calculated correctly
